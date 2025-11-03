@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:metroapp_flutter/features/authentication/ui/screen/loginscreen.dart';
+import 'package:metroapp_flutter/features/authentication/ui/screens/createaccountscreen.dart';
 
 void main() {
   runApp(const MyApp());

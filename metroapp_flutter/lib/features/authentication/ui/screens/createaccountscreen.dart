@@ -4,7 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:metroapp_flutter/components/custom_button_widget.dart';
 import 'package:metroapp_flutter/components/custom_inputfeild_widget.dart';
 import 'package:metroapp_flutter/components/custom_label_text_widget.dart';
-import 'package:metroapp_flutter/features/authentication/ui/screen/otpscreen.dart';
+import 'package:metroapp_flutter/features/authentication/ui/screens/otpscreen.dart';
 
 class Loginscreen extends StatefulWidget {
   const Loginscreen({super.key});
