@@ -6,15 +6,14 @@ import 'package:metroapp_flutter/components/custom_inputfeild_widget.dart';
 import 'package:metroapp_flutter/components/custom_label_text_widget.dart';
 import 'package:metroapp_flutter/features/authentication/ui/screens/otpscreen.dart';
 
-class Createaccountscreen extends StatefulWidget {
-  const Createaccountscreen({super.key});
+class Loginscreen extends StatefulWidget {
+  const Loginscreen({super.key});
 
   @override
-  State<Createaccountscreen> createState() => _CreateaccountscreenState();
+  State<Loginscreen> createState() => _LoginscreenState();
 }
 
-class _CreateaccountscreenState extends State<Createaccountscreen> {
-  final TextEditingController _fullNameController = TextEditingController();
+class _LoginscreenState extends State<Loginscreen> {
   final TextEditingController _emailController = TextEditingController();
 
   @override
@@ -40,20 +39,22 @@ class _CreateaccountscreenState extends State<Createaccountscreen> {
                         SizedBox(
                           width: 5.w,
                         ),
-                        Text("EasyMetro",
-                            style: TextStyle(
-                              color: Colors.black,
-                              fontFamily: GoogleFonts.poppins().fontFamily,
-                              fontSize: 18.spMin,
-                              fontWeight: FontWeight.w600,
-                            )),
+                        Text(
+                          "EasyMetro",
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontFamily: GoogleFonts.poppins().fontFamily,
+                            fontSize: 18.spMin,
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
                       ],
                     ),
                     SizedBox(
                       height: 20.h,
                     ),
                     Text(
-                      "Create Account",
+                      "Login Account",
                       style: TextStyle(
                         color: Colors.black,
                         fontFamily: GoogleFonts.poppins().fontFamily,
@@ -62,7 +63,7 @@ class _CreateaccountscreenState extends State<Createaccountscreen> {
                       ),
                     ),
                     Text(
-                      "Register today to book tickets, save your travel history, and enjoy cashless rides across the city.",
+                      "Sign in to access your tickets, view past journeys, and continue enjoying quick cashless metro rides.",
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         color: Colors.black.withOpacity(0.6),
@@ -77,24 +78,6 @@ class _CreateaccountscreenState extends State<Createaccountscreen> {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        CustomLabelTextWidget(
-                          labelText: 'Name',
-                        ),
-
-                        SizedBox(
-                          height: 5.h,
-                        ),
-
-                        // Name Input feild
-                        CustomInputfeild(
-                          labelText: 'Enter full name',
-                          controller: _fullNameController,
-                        ),
-
-                        SizedBox(
-                          height: 10.h,
-                        ),
-
                         CustomLabelTextWidget(
                           labelText: 'Email',
                         ),
@@ -147,7 +130,7 @@ class _CreateaccountscreenState extends State<Createaccountscreen> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text(
-                          "Already have an account?",
+                          "Don't have an account?",
                           style: TextStyle(
                             color: Colors.black.withOpacity(0.7),
                             fontFamily: GoogleFonts.poppins().fontFamily,
@@ -157,7 +140,7 @@ class _CreateaccountscreenState extends State<Createaccountscreen> {
                         ),
                         SizedBox(width: 5.w),
                         Text(
-                          "Login Account",
+                          "Create Account",
                           style: TextStyle(
                             color: Colors.teal,
                             fontFamily: GoogleFonts.poppins().fontFamily,
@@ -174,9 +157,6 @@ class _CreateaccountscreenState extends State<Createaccountscreen> {
           )
         ],
       ),
-   
-   
-   
     );
   }
 }

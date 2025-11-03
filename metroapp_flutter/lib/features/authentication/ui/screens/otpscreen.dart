@@ -45,7 +45,7 @@ class _OtpscreenState extends State<Otpscreen> {
             child: Column(
               children: [
                 SizedBox(
-                  height: 15.h,
+                  height: 5.h,
                 ),
                 Container(
                   decoration: BoxDecoration(
