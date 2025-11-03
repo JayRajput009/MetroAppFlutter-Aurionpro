@@ -6,14 +6,14 @@ import 'package:metroapp_flutter/components/custom_inputfeild_widget.dart';
 import 'package:metroapp_flutter/components/custom_label_text_widget.dart';
 import 'package:metroapp_flutter/features/authentication/ui/screens/otpscreen.dart';
 
-class Createaccountscreen extends StatefulWidget {
-  const Createaccountscreen({super.key});
+class CreateAccountScreen extends StatefulWidget {
+  const CreateAccountScreen({super.key});
 
   @override
-  State<Createaccountscreen> createState() => _CreateaccountscreenState();
+  State<CreateAccountScreen> createState() => _CreateAccountScreenState();
 }
 
-class _CreateaccountscreenState extends State<Createaccountscreen> {
+class _CreateAccountScreenState extends State<CreateAccountScreen> {
   final TextEditingController _fullNameController = TextEditingController();
   final TextEditingController _emailController = TextEditingController();
 
@@ -174,9 +174,6 @@ class _CreateaccountscreenState extends State<Createaccountscreen> {
           )
         ],
       ),
-   
-   
-   
     );
   }
 }

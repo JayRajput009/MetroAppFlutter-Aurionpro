@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:metroapp_flutter/features/authentication/ui/screens/createaccountscreen.dart';
-import 'package:metroapp_flutter/features/authentication/ui/screens/loginscreen.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -19,9 +19,7 @@ class MyApp extends StatelessWidget {
       designSize: Size(width, height),
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: Loginscreen(
-          
-        ),
+        home: CreateAccountScreen(),
       ),
     );
   }
