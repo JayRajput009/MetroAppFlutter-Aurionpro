@@ -5,11 +5,13 @@ import 'package:google_fonts/google_fonts.dart';
 class CustomInputfeild extends StatefulWidget {
   final String? labelText;
   final bool? isObscureText;
+  final TextEditingController? controller;
 
   const CustomInputfeild({
     super.key,
     this.labelText,
     this.isObscureText,
+    this.controller,
   });
 
   @override
@@ -30,6 +32,7 @@ class _CustomInputfeildState extends State<CustomInputfeild> {
     return Container(
       height: 55.h,
       child: TextFormField(
+        controller: widget.controller,
         obscureText: _obscureText,
         style: TextStyle(
           fontFamily: GoogleFonts.poppins().fontFamily,
